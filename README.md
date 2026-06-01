@@ -60,164 +60,204 @@
 
 ## 📸 Module Screenshots
 
-### 🔐 Login — Staff Gateway & Patient Vault
-> Dual glassmorphism panels — staff JWT login + patient ID portal
-
-![Login Page](screenshots/01_login.png)
-
----
-
-### 📊 Hospital Command Center (Dashboard)
-> Live KPIs: 50 doctors • 98 staff • 1,424 rooms • real-time occupancy
-
-![Dashboard](screenshots/02_dashboard.png)
-
----
-
-### 👤 Patient Registry
-> Full CRUD with smart search, admission tracking, custom Patient IDs, and room assignment
-
-![Patients](screenshots/03_patients.png)
-
----
-
-### 🩺 Doctors
-> Doctor profiles, specializations, department assignment, and availability management
-
-![Doctors](screenshots/04_doctors.png)
-
----
-
-### 👥 Staff Management
-> HR portal — roles, departments, contact info, and employee records
-
-![Staff](screenshots/05_staff.png)
-
----
-
-### 🛏️ Room Registry
-> 1,500+ room inventory with bed availability, ward types, and real-time occupancy status
-
-![Rooms](screenshots/06_rooms.png)
-
----
-
-### 📅 Appointments
-> Appointment booking with doctor-patient mapping and scheduling calendar
-
-![Appointments](screenshots/07_appointments.png)
-
----
-
-### 🏨 IPD Admissions
-> Inpatient admission management with room/doctor assignment and status tracking
-
-![Admissions](screenshots/08_admissions.png)
-
----
-
-### 📋 Clinical EMR
-> Electronic Medical Records — consultations, prescriptions, clinical notes, diagnoses
-
-![EMR](screenshots/09_emr.png)
-
----
-
-### 🔪 Operation Theatre
-> OT scheduling, surgical team assignment, and procedure tracking
-
-![Operation Theatre](screenshots/10_operation_theatre.png)
-
----
-
-### 🔬 Laboratory
-> Lab test orders, result management, category tracking, and cost billing
-
-![Laboratory](screenshots/11_laboratory.png)
-
----
-
-### 💊 Pharmacy
-> Medicine dispensing, prescription fulfillment, and outpatient drug management
-
-![Pharmacy](screenshots/12_pharmacy.png)
-
----
-
-### 🩸 Blood Bank
-> Blood group inventory, donor records, and transfusion management
-
-![Blood Bank](screenshots/13_blood_bank.png)
-
----
-
-### 🚑 Ambulance & Emergency Transport
-> Fleet management, dispatch coordination, driver assignment, and ETA tracking
-
-![Ambulance](screenshots/14_ambulance.png)
-
----
-
-### 🧾 Pharmacy Billing (POS)
-> Full POS with barcode medicine search, GST auto-calc, cart management, PDF invoice, and cash/UPI/card payment
-
-![Billing](screenshots/15_billing.png)
-
----
-
-### 💰 Master Billing & Discharge
-> Consolidated final account — all consultations + lab + pharmacy + ambulance rolled into discharge receipt with PDF export
-
-![Master Billing](screenshots/16_master_billing.png)
-
----
-
-### 📦 Medicine Inventory
-> Stock management, expiry tracking, low-stock alerts, and category filtering
-
-![Inventory](screenshots/17_inventory.png)
-
----
-
-### 🛒 Purchases & Procurement
-> Supplier management, purchase orders, GRN, and procurement tracking
-
-![Purchases](screenshots/18_purchases.png)
-
----
-
-### 💼 HR & Payroll
-> Employee salary slips, payroll processing, and attendance management
-
-![HR Payroll](screenshots/19_payroll.png)
-
----
-
-### 📈 Reports & Analytics
-> Revenue analytics, occupancy rates, department performance, and financial summaries
-
-![Reports](screenshots/20_reports.png)
-
----
-
-### 📊 Excel Import / Export
-> Bulk data operations — import patients, medicines, staff; export any module to Excel
-
-![Excel](screenshots/21_excel.png)
-
----
-
-### ⚙️ Settings
-> System configuration, hospital profile, user preferences, and security settings
-
-![Settings](screenshots/22_settings.png)
-
----
-
-### 📜 Patient History
-> Full longitudinal record — all visits, diagnoses, medications, and test results in one view
-
-![Patient History](screenshots/23_patient_history.png)
+### 1. Access & Command Center
+<table width="100%">
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <b>🔐 Dual-Panel Login Gateway</b><br>
+      <i>Staff JWT portal + encrypted Patient ID vault access</i><br><br>
+      <img src="screenshots/01_login.png" width="100%">
+    </td>
+    <td width="50%" align="center" valign="top">
+      <b>📊 Command Center (Dashboard)</b><br>
+      <i>Real-time occupancy rates, doctor/staff KPIs, and active patient charts</i><br><br>
+      <img src="screenshots/02_dashboard.png" width="100%">
+    </td>
+  </tr>
+</table>
+
+<br>
+
+### 2. Patient & Clinical Administration
+<table width="100%">
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <b>👤 Patient Registry</b><br>
+      <i>Full CRUD, smart search, admission history, and doctor mapping</i><br><br>
+      <img src="screenshots/03_patients.png" width="100%">
+    </td>
+    <td width="50%" align="center" valign="top">
+      <b>🏨 IPD Admissions</b><br>
+      <i>Bed assignments, admission tracking, and status monitoring</i><br><br>
+      <img src="screenshots/08_admissions.png" width="100%">
+    </td>
+  </tr>
+</table>
+
+<br>
+
+### 3. Medical Records & Surgery
+<table width="100%">
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <b>📋 Clinical EMR</b><br>
+      <i>Prescriptions, clinical notes, diagnosis tracking, and vitals history</i><br><br>
+      <img src="screenshots/09_emr.png" width="100%">
+    </td>
+    <td width="50%" align="center" valign="top">
+      <b>🔪 Operation Theatre (OT)</b><br>
+      <i>OT schedule calendars, surgical teams, and procedure statuses</i><br><br>
+      <img src="screenshots/10_operation_theatre.png" width="100%">
+    </td>
+  </tr>
+</table>
+
+<br>
+
+### 4. Diagnostics & Lab Services
+<table width="100%">
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <b>🔬 Laboratory Diagnostics</b><br>
+      <i>Test orders, sample statuses, diagnostic pricing, and report uploads</i><br><br>
+      <img src="screenshots/11_laboratory.png" width="100%">
+    </td>
+    <td width="50%" align="center" valign="top">
+      <b>🩸 Blood Bank Inventory</b><br>
+      <i>Donor logs, cross-match history, and real-time blood group stock levels</i><br><br>
+      <img src="screenshots/13_blood_bank.png" width="100%">
+    </td>
+  </tr>
+</table>
+
+<br>
+
+### 5. Scheduling & Staffing
+<table width="100%">
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <b>🩺 Doctors & Consultations</b><br>
+      <i>Availability schedules, departments, and consultation fees management</i><br><br>
+      <img src="screenshots/04_doctors.png" width="100%">
+    </td>
+    <td width="50%" align="center" valign="top">
+      <b>👥 Staff & Employee Registry</b><br>
+      <i>HR files, roles, shifts, contact information, and employee status</i><br><br>
+      <img src="screenshots/05_staff.png" width="100%">
+    </td>
+  </tr>
+</table>
+
+<br>
+
+### 6. Scheduling, Infrastructure & Emergency
+<table width="100%">
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <b>📅 Appointments Scheduling</b><br>
+      <i>Patient appointments mapping, status, and calendar scheduler</i><br><br>
+      <img src="screenshots/07_appointments.png" width="100%">
+    </td>
+    <td width="50%" align="center" valign="top">
+      <b>🛏️ Rooms & Facility Map</b><br>
+      <i>1,500+ rooms mapped with real-time occupancy and resident alerts</i><br><br>
+      <img src="screenshots/06_rooms.png" width="100%">
+    </td>
+  </tr>
+</table>
+
+<br>
+
+### 7. Emergency Services & Patient Vault
+<table width="100%">
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <b>🚑 Ambulance Fleet Dispatch</b><br>
+      <i>GPS tracking, driver assignment, vehicle condition, and traffic status</i><br><br>
+      <img src="screenshots/14_ambulance.png" width="100%">
+    </td>
+    <td width="50%" align="center" valign="top">
+      <b>📜 Patient Portal History</b><br>
+      <i>Patient-facing longitudinal medical record, visits, and receipts</i><br><br>
+      <img src="screenshots/23_patient_history.png" width="100%">
+    </td>
+  </tr>
+</table>
+
+<br>
+
+### 8. Pharmacy & POS Billing
+<table width="100%">
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <b>💊 Outpatient Dispensing</b><br>
+      <i>Prescription fulfillment and medicine dispensing queue</i><br><br>
+      <img src="screenshots/12_pharmacy.png" width="100%">
+    </td>
+    <td width="50%" align="center" valign="top">
+      <b>🧾 Pharmacy Billing POS</b><br>
+      <i>Barcode search, GST auto-calculation, receipt print, and payment options</i><br><br>
+      <img src="screenshots/15_billing.png" width="100%">
+    </td>
+  </tr>
+</table>
+
+<br>
+
+### 9. Procurement & Inventory
+<table width="100%">
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <b>📦 Medicine Stock Inventory</b><br>
+      <i>Expiry warnings, low stock flags, batch tracking, and categories</i><br><br>
+      <img src="screenshots/17_inventory.png" width="100%">
+    </td>
+    <td width="50%" align="center" valign="top">
+      <b>🛒 Purchases & Procurement</b><br>
+      <i>Suppliers directory, purchase orders, and goods received logs</i><br><br>
+      <img src="screenshots/18_purchases.png" width="100%">
+    </td>
+  </tr>
+</table>
+
+<br>
+
+### 10. Finance & Human Resources
+<table width="100%">
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <b>💰 Master Billing & Discharge</b><br>
+      <i>Rollup billing (clinical + pharmacy + lab) and final summary</i><br><br>
+      <img src="screenshots/16_master_billing.png" width="100%">
+    </td>
+    <td width="50%" align="center" valign="top">
+      <b>💼 HR Payroll</b><br>
+      <i>Salary processing, attendance tracking, and payslip exports</i><br><br>
+      <img src="screenshots/19_payroll.png" width="100%">
+    </td>
+  </tr>
+</table>
+
+<br>
+
+### 11. Reports & Utilities
+<table width="100%">
+  <tr>
+    <td width="50%" align="center" valign="top">
+      <b>📈 Financial Reports & BI</b><br>
+      <i>Revenue analytics, occupancy rates, and sales trends</i><br><br>
+      <img src="screenshots/20_reports.png" width="100%">
+    </td>
+    <td width="50%" align="center" valign="top">
+      <b>📊 Excel Import/Export & Settings</b><br>
+      <i>Bulk Excel operations (import/export patients, stock) + settings config</i><br><br>
+      <img src="screenshots/21_excel.png" width="50%">
+      <img src="screenshots/22_settings.png" width="48%">
+    </td>
+  </tr>
+</table>
+
+<br>
 
 ---
 
