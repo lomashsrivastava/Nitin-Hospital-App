@@ -5,7 +5,7 @@
 
 ![Dashboard](screenshots/02_dashboard.png)
 
-[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Netlify-00C7B7?style=for-the-badge)](https://nitin-hospital-app.netlify.app)
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Netlify-00C7B7?style=for-the-badge)](https://nitinhospital.netlify.app)
 [![API](https://img.shields.io/badge/🔌_Backend_API-Render-46E3B7?style=for-the-badge)](https://nitin-hospital-backend.onrender.com)
 [![React](https://img.shields.io/badge/React_19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
 [![Django](https://img.shields.io/badge/Django_5-092E20?style=for-the-badge&logo=django)](https://djangoproject.com)
@@ -488,6 +488,6 @@ This project is proprietary software developed for **Nitin Hospital Medical Cent
 
 **Made with ❤️ for better healthcare management**
 
-[🌐 Live Demo](https://nitin-hospital-app.netlify.app) • [🔌 API](https://nitin-hospital-backend.onrender.com) • [📧 Contact](mailto:info@nitinhospital.com)
+[🌐 Live Demo](https://nitinhospital.netlify.app) • [🔌 API](https://nitin-hospital-backend.onrender.com) • [📧 Contact](mailto:info@nitinhospital.com)
 
 </div>
