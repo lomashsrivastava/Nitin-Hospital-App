@@ -1,0 +1,28 @@
+# ============================================================
+# render.yaml — Render deployment configuration
+# Defines the backend web service for Nitin Hospital
+# ============================================================
+services:
+  - type: web
+    name: nitin-hospital-backend
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    envVars:
+      - key: MONGODB_URI
+        sync: false          # Set manually in Render dashboard
+      - key: DB_NAME
+        value: nitin_medical
+      - key: DJANGO_SECRET_KEY
+        generateValue: true  # Render auto-generates a secure key
+      - key: DJANGO_DEBUG
+        value: "False"
+      - key: DJANGO_ALLOWED_HOSTS
+        value: ".onrender.com,localhost"
+      - key: CORS_ALLOWED_ORIGINS
+        sync: false          # Set to your Netlify URL after deploy
+      - key: PORT
+        value: "8000"
+    buildCommand: ""         # build.sh runs inside Dockerfile CMD
+    startCommand: ""         # Defined in Dockerfile CMD

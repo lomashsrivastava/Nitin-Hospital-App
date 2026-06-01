@@ -1,0 +1,64 @@
+# ============================================================
+# .gitignore — Nitin Hospital Full-Stack App
+# ============================================================
+
+# ── Environment files (NEVER commit these) ─────────────────
+.env
+.env.local
+.env.production
+backend/.env
+frontend/.env
+frontend/.env.local
+
+# ── Python / Django ────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+*.pyo
+*.pyc
+db.sqlite3
+*.log
+staticfiles/
+media/
+backups/
+
+# ── Node / Frontend ────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+.npm
+
+# ── IDE / OS ───────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Docker ─────────────────────────────────────────────────
+docker/volumes/
+
+# ── Test / Seed scripts (optional — keep for reference) ────
+# Uncomment below to exclude seed/test scripts from git:
+# backend/seed_*.py
+# backend/test_*.py
+# backend/check_*.py
+# backend/inspect_*.py
+
+# ── Puppeteer screenshots script ──────────────────────────
+# Keep capture_screenshots.js (useful for docs regeneration)
+# Keep screenshots/ folder (needed for README)

@@ -1,0 +1,51 @@
+# ============================================================
+# docker-compose.yml — Local development with Docker
+# Mirrors the Render + Netlify production setup locally
+#
+# Usage:
+#   docker-compose up --build
+#   Frontend → http://localhost:5173
+#   Backend  → http://localhost:8000
+# ============================================================
+version: '3.8'
+
+services:
+
+  # ── Django Backend (mirrors Render) ──────────────────────
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: nitin-backend
+    restart: unless-stopped
+    environment:
+      - MONGODB_URI=${MONGODB_URI}
+      - DB_NAME=${DB_NAME:-nitin_medical}
+      - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY:-dev-secret-key-change-in-production}
+      - DJANGO_DEBUG=True
+      - DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1,0.0.0.0,backend
+      - CORS_ALLOWED_ORIGINS=http://localhost:5173,http://localhost:3000
+      - PORT=8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app     # Live code reload in dev
+    command: >
+      sh -c "python manage.py migrate --run-syncdb 2>/dev/null || true &&
+             python manage.py collectstatic --noinput &&
+             python ensure_user.py &&
+             gunicorn nitin_billing.wsgi:application --bind 0.0.0.0:8000 --workers 2 --reload"
+
+  # ── React/Vite Frontend (mirrors Netlify) ────────────────
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nitin-frontend
+    restart: unless-stopped
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend

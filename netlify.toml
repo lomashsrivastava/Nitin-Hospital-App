@@ -1,0 +1,18 @@
+# ============================================================
+# netlify.toml — Netlify deployment configuration
+# Frontend: React/Vite → builds from /frontend folder
+# ============================================================
+
+[build]
+  base    = "frontend"
+  command = "npm install && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# SPA fallback — all routes go to index.html (React Router)
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
